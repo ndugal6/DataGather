@@ -11,7 +11,7 @@ params = {
     'limit': 10,
     'indent': True,
     'key': api_key,
-    'type': 'Person', # this can be any of https://schema.org/docs/full.html
+    'types': 'Person', # this can be any of https://schema.org/docs/full.html
 }
 url = service_url + '?' + urllib.parse.urlencode(params)
 response = requests.get(url).json()
